@@ -29,7 +29,7 @@
     {
       "method": "shell.enter",
       "params": {
-        "message": "npx --yes torchcraft@0.0.14",
+        "message": "npx --yes torchcraft@0.0.15",
         "on": [
           {
             "event": null,
@@ -42,6 +42,18 @@
       "method": "shell.enter",
       "params": {
         "message": "pip install -r torchcraft.txt",
+        "on": [
+          {
+            "event": null,
+            "return": true
+          }
+        ]
+      }
+    },
+    {
+      "method": "shell.enter",
+      "params": {
+        "message": "pip install --pre xformers",
         "on": [
           {
             "event": null,
