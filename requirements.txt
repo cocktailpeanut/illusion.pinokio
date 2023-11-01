@@ -1,8 +1,8 @@
 diffusers
 transformers
 accelerate
-torch
+#torch
 xformers
-gradio
+gradio==3.50.2
 Pillow
 qrcode

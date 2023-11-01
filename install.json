@@ -53,25 +53,11 @@
     {
       "method": "shell.enter",
       "params": {
-        "message": "pip install --pre xformers",
-        "on": [
-          {
-            "event": null,
-            "return": true
-          }
-        ]
-      }
-    },
-    {
-      "method": "shell.enter",
-      "params": {
-        "message": "pip install gradio huggingface_hub",
-        "on": [
-          {
-            "event": null,
-            "return": true
-          }
-        ]
+        "message": "{{gpu === 'nvidia' ? 'pip install xformers==0.0.22.post4 --index-url https://download.pytorch.org/whl/cu118' : 'pip install xformers==0.0.22.post4'}}",
+        "on": [{
+          "event": null,
+          "return": true
+        }]
       }
     },
     {
