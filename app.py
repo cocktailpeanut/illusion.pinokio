@@ -122,7 +122,7 @@ with gr.Blocks() as app:
             with gr.Accordion(label="Advanced Options", open=False):
                 #strength = gr.Slider(minimum=0.0, maximum=1.0, step=0.01, value=0.9, label="Strength")
                 guidance_scale = gr.Slider(minimum=0.0, maximum=50.0, step=0.25, value=7.5, label="Guidance Scale")
-                sampler = gr.Dropdown(choices=list(SAMPLER_MAP.keys()), value="Euler")
+                sampler = gr.Dropdown(choices=list(SAMPLER_MAP.keys()), value="Euler", label="Sampler")
                 seed = gr.Slider(minimum=-1, maximum=9999999999, step=1, value=2313123, label="Seed", randomize=True)
             run_btn = gr.Button("Run")
         with gr.Column():
